@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e524d64bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body> 
+    <!--<?php the_field( "hero_texto" );?>-->
+    <header>
+        <div class="container">
+            <i class="fas fa-bars icono_menu"></i>
+            <a href="" class="header_wrapper_logo"><img src="icon 7.png" alt="Logo" width="160"></a>
+            <nav class="menu">
+                <ol>
+                    <li><a href="http://">Full Services</a></li>
+                    <li><a href="http://">World wide</a></li>
+                    <li><a href="http://"><img src="icon 9.png" alt=""></li></a>
+                    <li><a href="http://">Contact</a></li>
+                    <li><a href="http://">ES | EN</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <div class="hero" style="background-image:url(BannerHome/mockup-home.jpg);">
+        <div class="container" >
+            <div class="hero_section">
+                <h1 class="">AWWSOME AGENCY GREAT CLIENTS</h1>
+                <p class="" >Lorem Ipsum dolor sir faber code</p>
+                <form>
+                        <input type="btn-hero" placeholder="Lorem Ipsum">
+                        <input class="btn-search" type="button" value="CONTACT">
+                </form>
+            </div>
+        </div>
+    </div>
+ <div class="container container_about">
+        <div class="about">
+            <div class="about_logo">
+                <img src="about.png"></img>
+                <h2><strong>ABOUT</strong> TUATARA</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos, iste earum sint consequuntur voluptas odit delectus sit eius officiis cum. Non soluta possimus blanditiis, iste explicabo eius? Dignissimos, natus?</p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="container">
+            <div class="services_image_wrapper">
+                <img src="services/Services.png" alt="">
+            </div>
+            <div class="services_description">
+                <h2><strong>FULL</strong> SERVICE</h2>
+                <section>
+                    <h4 class="services_description_white">SOFTWARE & TECH <span class="dashicons dashicons-arrow-down"></h4></span>
+                </section>
+                <section class="is-active">
+                    <h4><strong>PURE DESIGN <span class="dashicons dashicons-arrow-down"></span></strong></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sit expedita maiores nostrum recusandae labore sequi commodi optio. Ut ipsa, facere quae labo</p>
+                    <a>Branding</a>
+                    <a>Animation</a>
+                    <a>Characters</a>
+                    <a>Printed</a>
+                </section>
+                <section>
+                    <h4 class="services_description_white">MARKETING<span class="dashicons dashicons-arrow-down"></h4>
+                </section>
+            </div>
+        </div>                
+    </div>
+    <div class="portafolio">
+        <div class="container">
+            <div class="portafolio-bg" style="background-image: url(portafolio/Proyect-2.jpg);">
+                <h2><strong>OUR </strong> PORTAFOLIO</h2>
+                <div class="Wrapper-project">
+                    <div class="description-project">
+                        <h4>NOMBRE DEL PROYECTO</h4>
+                        <h5><strong>PURE DESIGN |</strong> Branding</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti hic repellat officiis ullam voluptatem voluptas sequi saepe cum, enim quidem. Qui explicabo ea placeat labore quo voluptatibus eum libero in!</p>
+                        <h4 class="next-project">NEXT PROJECT <span><a href="#"></a></span></h4>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*Mostrar menu responsive*/
+        const menu = document.querySelector(".menu");
+        const boton = document.querySelector(".icono_menu");          
+        /*console.log(menu);*/   
+        function hideShow(){
+            console.log(menu);
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }
+        }
+        
+        /*Mediaquery JS, para inactivar eventos*/
+        const tablet =  window.matchMedia('screen and (max-width: 767px)');
+        tablet.addListener(validation);/*escucha los cambios de pantall*/
+        
+        function validation(event){
+            if(event.matches){
+                boton.addEventListener('click', hideShow);
+            }else{
+                boton.removeEventListener('click', hideShow);
+            }
+        }
+        //Activar el menu responsive cuando carga la página en telefonos pequeños
+        validation(tablet);
+        </script>
+</body>
+</html>
