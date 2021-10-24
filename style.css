@@ -199,25 +199,12 @@ div.container_about{
 .services_description h2{
     font-size: 1.65em;
 }
-/*Caja contenedora*/
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: inherit;
-    flex-direction: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    gap:inherit;
-    border: 1px solid red;
-    height: inherit;
-}
-
+/*Portafolio*/
 .portafolio{
     background-color: hsl(182, 99%, 46%);
     
 }
-.portafolio-bg{
+div.portafolio-bg{
     background-size: cover;
     padding-top: 6em;
     height: 70vh;
@@ -257,7 +244,18 @@ div.container_about{
 .next-project{
     text-align: right;
 }
-
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    gap:inherit;
+    border: 1px solid red;
+    height: inherit;
+}
 
 
 
@@ -280,7 +278,19 @@ div.container_about{
         width: 84%;
         margin:0 auto;
     }
-
+    /*Project*/
+    .Wrapper-project{
+        position: initial;
+    }
+    .description-project{
+        padding:1em;
+    }
+    div.portafolio-bg{
+        padding:0;
+    }
+    .portafolio h2{
+        margin-left: 1em;
+    }
     .container{
         padding: 0 1em;
     }
@@ -399,6 +409,11 @@ div.container_about{
     /**/
     .services{
         padding-top: 1em;
+    }
+    /**/
+    .Wrapper-project{
+        margin: 1em;
+        width: auto;
     }
 }
 @media screen and (max-width: 480px) {
