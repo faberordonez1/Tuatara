@@ -244,6 +244,46 @@ div.portafolio-bg{
 .next-project{
     text-align: right;
 }
+
+/**Happy Friends CSS Grid*/
+.friends{
+    background-color: hsl(182, 99%, 46%);
+    /* color: rgb(140, 85, 85); */
+}
+.friends .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4em;
+}
+.friends-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.friends-description ul{
+    display: flex;
+    gap: 1em;
+    /* font-size: 1.5em; */
+}
+.friends-description li{
+  list-style: none;
+}
+.friends-brand{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+.friends-brand .card{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
 .container{
     width: 100%;
     max-width: 1200px;
